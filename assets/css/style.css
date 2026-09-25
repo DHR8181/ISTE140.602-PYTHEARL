@@ -6,3 +6,47 @@ footer{clear :both;}
 main aside ol { padding-left: 50px; } /*here main aside ol is not needed, but we are keeping just in-case if in the future anytime if we add aside container and ol list in another container, we are able to  distinfuish between them and choose this correctly*/
 a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Keeps links clean without underlines */
 .lesson_text{padding-left:30px;padding-top:50px;color: #3B4FA8; font-size: 30px;}
+
+
+#logoAndTitle 
+{
+    float:left;
+    width:7%;
+    text-align:center;
+    
+    
+}
+
+#logo{
+
+    width:200px;
+    height:200px;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+<!-- This entire thing below is the dropdown stuff -- >
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
