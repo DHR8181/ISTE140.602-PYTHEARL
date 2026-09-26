@@ -8,7 +8,7 @@ main aside
 {
     color: white;
     border-right: 1.5px solid black;
-    background-color: gray;
+    background-color: #003366;
     width:20%;
     float: left;
     overflow: auto;
@@ -32,6 +32,9 @@ main
 footer
 {
     clear :both;
+    background-color:#1e2757;
+    height:7vh;
+    color:white;
 }
 main aside ol
 {
@@ -43,7 +46,7 @@ a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Kee
 #logoAndTitle
 {
     float:left;
-    width:23%;
+    width:25%;
 
 
 
@@ -51,23 +54,62 @@ a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Kee
 img
 {
     float:left;
+    padding-left:10px;
 }
 #logo{
 
     width:100px;
     height:100px;
-    box-sizing: border-box;
+
+
 
 }
 
 
+
+#logoAndTitle h5
+{
+ color:#fccd3b;
+    padding-top:5%;
+    font-size:35px;
+}
+
+h5 span
+{
+    color:#284f90;
+}
+
+h1{
+    padding: 2%;
+
+}
+
+h1 span{
+    border-bottom:1.5px solid #284f90;
+    padding-bottom:0.5%;
+
+}
+aside h2
+{
+    margin-bottom:4%;
+}
+ aside ol li
+{
+    margin-bottom:10%;
+}
+main section p{
+    padding-left: 3%;padding-right: 3%;padding-bottom: 3%;
+}
+
 header{
-    border-bottom:1px solid;
-    height:20vh;
+
+   height:12vh;
+    background-color:#1e2757
+
 }
 body {
     font-family: Verdana, Arial, sans-serif;
-    background-color: grey;
+    background-color: #1e2757;
 
 }
 
@@ -78,7 +120,7 @@ h1, h2, h3 {
 main
 {
     height:80vh;
-    background-color:red;
+    background-color:#f2f4fa;
     overflow:auto;
 }
 
@@ -102,6 +144,23 @@ main
 
 }
 
+nav {
+   height:100%;
+    padding:2.5%;
+}
+
+nav a {
+    font-size:25px;
+    margin-right:3%;
+}
+
+
+
+nav span
+{
+    font-size:25px;
+    margin-right:1%;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 
