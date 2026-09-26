@@ -8,10 +8,6 @@ main aside ol { padding-left: 50px; } /*here main aside ol is not needed, but we
 a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Keeps links clean without underlines */
 .lesson_text{padding-left:30px;padding-top:50px;color: #3B4FA8; font-size: 30px;}
 
-header{
-    color: black;
-}
-
 #logoAndTitle 
 {
     float:left;
