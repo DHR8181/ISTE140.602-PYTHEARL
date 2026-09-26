@@ -12,7 +12,14 @@ main aside
     width:20%;
     float: left;
     overflow: auto;
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+
 }
+
+
 main section
 {
     width:80%;
@@ -33,25 +40,31 @@ main aside ol
 a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Keeps links clean without underlines */
 .lesson_text{padding-left:30px;padding-top:50px;color: #3B4FA8; font-size: 30px;}
 
-header{
-    color: black;
-}
-
-#logoAndTitle 
+#logoAndTitle
 {
     float:left;
-    width:7%;
-    text-align:center;
-    
-    
-}
+    width:23%;
 
+
+
+}
+img
+{
+    float:left;
+}
 #logo{
 
-    width:200px;
-    height:200px;
+    width:100px;
+    height:100px;
+    box-sizing: border-box;
+
 }
 
+
+header{
+    border-bottom:1px solid;
+    height:20vh;
+}
 body {
     font-family: Verdana, Arial, sans-serif;
     background-color: grey;
@@ -66,7 +79,9 @@ main
 {
     height:80vh;
     background-color:red;
+    overflow:auto;
 }
+
 
 /* This entire thing below is the dropdown stuff */
 
