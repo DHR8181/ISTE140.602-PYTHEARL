@@ -41,6 +41,8 @@ main section
 #logoAndTitle p
 {
     color:#006bff;
+    font-size: 70%;
+    margin-bottom: 1%;
 }
 #contentInAside
 {
@@ -165,8 +167,10 @@ img
 }
 #logo{
 
-    width:100px;
-    height:100px;
+    width:27%;
+    height:30%;
+    max-height: 100%;
+    margin-top: 3%;
 
 
 
@@ -203,6 +207,7 @@ aside ol.circled-list li {
     padding-top: 5%;
     height:10rem;
     padding-left:5%;
+    padding-bottom: 3%;
     margin-left:5%;
     margin-right:5%;
 }
@@ -253,6 +258,7 @@ aside div img
  color:#fccd3b;
     padding-top:5%;
     font-size:35px;
+
 }
 
 h5 span

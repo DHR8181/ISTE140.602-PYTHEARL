@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aboutstyle.css">
 </head>
 <body>
 <header>
@@ -11,6 +12,7 @@
     <div id="logoAndTitle">
         <img id="logo" src="assets/media/4.svg" alt="Pythearl logo">
         <h5>Pyth<span>earl</span></h5>
+        <p>- Code your future, line by line</p>
     </div>
     <nav>
         <ul>
@@ -19,7 +21,7 @@
             <li ><span class="dropdown">
                 <span class = "clickableText">Lessons ▼</span>
 
-                <span style="width: 100%" class="dropdown-content">
+                <span class="dropdown-content">
                     <a class = "clickableText" href="lesson_dhruv.html">Lesson 1</a>
                     <a class = "clickableText" href="lesson_mohamed.html">Lesson 2</a>
                     <a class = "clickableText" href="lesson_sarvagnya.html">Lesson 3</a>
@@ -41,44 +43,74 @@
 
 
 <main>
-    <table>
-        <thead>
-        <tr>
-            <th>Member No</th>
-            <th>Name</th>
-            <th>Role in Team</th>
-            <th>Lesson Title</th>
-            <th>HTML File Name</th>
-            <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>1</th>
-            <td>Dhruv Jignesh Mer</td>
-            <td>22</td>
-            <td>22</td>
-            <td>Lesson_Dhruv.html</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>Mohamed Ezzeldeen</td>
-            <td>22</td>
-            <td>22</td>
-            <td>Lesson_Mohamed.html</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td>Sarvagnya Kumar Dandala</td>
-            <td>22</td>
-            <td>22</td>
-            <td>Lesson_Sarvagnya.html</td>
-            <td>22</td>
-        </tr>
-        </tbody>
-    </table>
+        <aside>
+            <div id="contentInAside">
+                <div id="lessonsContent">
+                    <div id ="asideTitleAndLogo">
+                        <img src="assets/media/BookIcon.svg" alt = "Book icon" >
+                        <h2>Lessons</h2>
+                    </div>
+                    <ol class = "circled-list">
+                        <li><a class = "clickableText" href="lesson_Dhruv.html">Dhruv Lesson</a></li>
+                        <li><a class = "clickableText" href="lesson_sarvagnya.html">Sarvagnya Lesson</a></li>
+                        <li><a class = "clickableText" href="lesson_mohamed.html">Mohamed Lesson</a></li>
+                    </ol>
+                </div>
+                <br>
+                <div>
+                    <div class = "card">
+                        <span href="about.html">About The Team</span>
+                        <br>
+
+                        <label>We are the team behind the development of this website, click the button below to know more about us</label>
+                    </div>
+                    <a href="about.html">
+                        <button type="button" class = "primaryBtn">Learn more</button>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <section>
+            <table>
+                <thead>
+                <tr>
+                    <th>Member No</th>
+                    <th>Name</th>
+                    <th>Role in Team</th>
+                    <th>Lesson Title</th>
+                    <th>HTML File Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Dhruv Jignesh Mer</td>
+                    <td>Co-Founder / Frontend Developer</td>
+                    <td>Python Basics and Output</td>
+                    <td><a href="lesson_Dhruv.html">Lesson_Dhruv.html</a></td>
+                    <td>Managed styling of other detailed components, including aside/sidebar and table formatting in home.html and about.html pages.</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Mohamed Ezzeldeen</td>
+                    <td>Co-Founder / Frontend Developer</td>
+                    <td>Variables, Data Types, and Input</td>
+                    <td><a href="lesson_mohamed.html">Lesson_Mohamed.html</a></td>
+                    <td>Made the site color palette and crafted general page layout using styles (navbar &amp; footer).</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Sarvagnya Kumar Dandala</td>
+                    <td>Co-Founder / Frontend Developer</td>
+                    <td>Conditions and Loops</td>
+                    <td><a href="lesson_sarvagnya.html">Lesson_Sarvagnya.html</a></td>
+                    <td>Designed brand logo and tagline which resembles our moto of teaching python while representing luxury. Also established the base semantic HTML structure used by all other pages.</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 </main>
 
 <hr>
