@@ -8,7 +8,7 @@ main aside
 {
     color: white;
     border-right: 1.5px solid black;
-    background-color: #003366;
+    background-color: #1e2757;
     width:20%;
     float: left;
     overflow: auto;
@@ -18,6 +18,8 @@ main aside
     justify-content:space-evenly;
     position:fixed;
     z-index:4;
+    border-top:2px solid black;
+    border-right:2px solid black;
 
 
 
@@ -188,7 +190,7 @@ aside ol.circled-list li {
 
 .card
 {
-    background-color: #007bff;
+    background-color: #006bff;
     border-radius: 12px;
     width: 90%;
     padding-top: 5%;
@@ -214,7 +216,7 @@ aside ol.circled-list li::before {
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    background-color: #007bff;
+    background-color: #006bff;
     color: #ffffff;
     font-weight: bold;
     font-size: 14px;
@@ -248,7 +250,7 @@ aside div img
 
 h5 span
 {
-    color:#284f90;
+    color:#006bff;
 }
 
 h1{
@@ -283,6 +285,7 @@ header{
     position:fixed;
     width: 100%;
     height: 12vh;
+
 
 
 }
