@@ -12,36 +12,129 @@ main aside
     width:20%;
     float: left;
     overflow: auto;
-    height:80vh;
+    height:100%;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
+    position:fixed;
+    z-index:4;
+
+
+
 
 }
 
+.navOptions
+{
+    color:white;
+}
 
 main section
 {
     width:80%;
     float: right;
+    height:100%;
+    padding-bottom:10vh;
+
 }
-main
+
+#contentInAside
 {
-    clear:both
+    margin-top:8vh;
+    margin-bottom: 50vh;
+}
+
+#lessonsContent
+{
+    margin-bottom: 6vh;
+}
+
+#lessonsContent h2
+{
+    display:inline;
+    margin-left:5%;
+
+}
+nav ul li
+{
+
+    display: inline-block;
+    margin-right:5%;
+}
+
+
+
+.dropdown-content a
+{
+
+    width:100%;
+}
+aside button
+{
+    margin-top:8vh;
+    margin-left:20%;
+    margin-right:20%;
+
+}
+
+section button
+{
+    margin-left:2.5%;
+}
+.primaryBtn
+{
+    height:6vh;
+    font-size:1.5rem;
+    border-radius: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    width:fit-content;
+    padding: 1% 1% 3% 1%;
+    background-color: #f5d22f;
+    border:0;
 }
 footer
 {
-    clear :both;
-    background-color:#1e2757;
-    height:7vh;
+
+    background-color:#000000;
     color:white;
+    height:100%;
+    width:100%;
+    position: relative;
+    padding-top:2vh;
+    padding-bottom:6vh;
+    z-index: 5;
+
+
+
+
+}
+
+#motivation
+{
+    margin-left:2%;
+
+}
+
+#motivation img
+{
+    margin-right:1%;
+
+}
+
+
+
+main section img
+{
+    width: 20%;
+    border-radius: 12px;
+    float:left;
 }
 main aside ol
 {
     padding-left: 50px;
 } /*here main aside ol is not needed, but we are keeping just in-case if in the future anytime if we add aside container and ol list in another container, we are able to  distinfuish between them and choose this correctly*/
 a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Keeps links clean without underlines */
-.lesson_text{padding-left:30px;padding-top:50px;color: #3B4FA8; font-size: 30px;}
+.lesson_text{padding-left:30px;color: #3B4FA8; font-size: 30px;}
 
 #logoAndTitle
 {
@@ -50,6 +143,11 @@ a, a:visited{color: white; text-decoration: none;}/* text-decoration: none;  Kee
 
 
 
+}
+
+#quizText
+{
+    padding-left:20%;
 }
 img
 {
@@ -66,7 +164,81 @@ img
 }
 
 
+aside ol.circled-list {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 10%;
+}
 
+nav span span div a:hover {
+    color: #fccd3b;
+    border-bottom: 2px solid #fccd3b;
+}
+
+
+
+aside ol.circled-list li {
+    counter-increment: my-counter;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 5px;
+
+
+}
+
+.card
+{
+    background-color: #007bff;
+    border-radius: 12px;
+    width: 90%;
+    padding-top: 5%;
+    height:10rem;
+    padding-left:5%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.card label
+{
+    line-height:1.6;
+
+}
+aside ol.circled-list li::before {
+    content: counter(my-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+#asideOptions
+{
+ background-color: yellow;
+}
+
+
+
+#asideTitleAndLogo
+{
+
+    margin-bottom: 1rem;
+    margin-left:1.2rem;
+}
+aside div img
+{
+    width: 2.5rem;
+}
 #logoAndTitle h5
 {
  color:#fccd3b;
@@ -92,19 +264,26 @@ h1 span{
 aside h2
 {
     margin-bottom:4%;
+
+
 }
  aside ol li
 {
-    margin-bottom:10%;
+    margin-bottom:15%;
 }
 main section p{
     padding-left: 3%;padding-right: 3%;padding-bottom: 3%;
+
 }
 
 header{
 
-   height:12vh;
-    background-color:#1e2757
+
+    background-color:#1e2757;
+    position:fixed;
+    width: 100%;
+    height: 12vh;
+
 
 }
 body {
@@ -119,9 +298,11 @@ h1, h2, h3 {
 
 main
 {
-    height:80vh;
+    min-height:120vh;
+    height:auto;
     background-color:#f2f4fa;
-    overflow:auto;
+    padding-top:12vh;
+
 }
 
 
@@ -129,7 +310,7 @@ main
 
 .dropdown {
   position: relative;
-
+    display:inline-block;
 
 }
 
@@ -137,9 +318,9 @@ main
   display: none;
   position: absolute;
   background-color: #BEBEBE;
-  min-width: 130px;
+  min-width:9rem;
   left:0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
   padding: 12px 16px;
 
 }
@@ -150,16 +331,24 @@ nav {
 }
 
 nav a {
-    font-size:25px;
-    margin-right:3%;
+    font-size:1.5rem;
+    color:white;
 }
 
 
 
+
+
+.clickableText:hover
+{
+    color: #fccd3b;
+    border-bottom: 2px solid #fccd3b;
+}
+
 nav span
 {
-    font-size:25px;
-    margin-right:1%;
+    font-size:1.5rem;
+    color:white;
 }
 .dropdown:hover .dropdown-content {
   display: block;

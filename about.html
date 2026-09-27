@@ -7,25 +7,34 @@
 </head>
 <body>
 <header>
+
     <div id="logoAndTitle">
-        <div><img id="logo" src="assets/media/4.svg" alt="Pythearl logo"></div>
-        <h5>Pythearl</h5>
+        <img id="logo" src="assets/media/4.svg" alt="Pythearl logo">
+        <h5>Pyth<span>earl</span></h5>
     </div>
     <nav>
-        <a href="index.html">Home</a>
+        <ul>
+            <li><a class = "clickableText" href="index.html">Home</a></li>
+            <li> <a  class = "clickableText" href="about.html">About</a></li>
+            <li ><span class="dropdown">
+                <span class = "clickableText">Lessons ▼</span>
 
-        <a href="about.html">About</a>
-        <span class="dropdown">
-                <span>Lessons ▼</span>
-
-                <span class="dropdown-content">
-                    <div><a href="lesson_dhruv.html">Lesson 1</a></div>
-                    <div><a href="lesson_mohamed.html">Lesson 2</a></div>
-                    <div><a href="lesson_sarvagnya.html">Lesson 3</a></div>
+                <span style="width: 100%" class="dropdown-content">
+                    <a class = "clickableText" href="lesson_dhruv.html">Lesson 1</a>
+                    <a class = "clickableText" href="lesson_mohamed.html">Lesson 2</a>
+                    <a class = "clickableText" href="lesson_sarvagnya.html">Lesson 3</a>
                 </span>
             </span>
-        <a href="quiz.html">Quiz</a>
-        <a href="references.html">References</a>
+            </li>
+            <li><a href="quiz.html"><span class = "clickableText">Quiz</span></a></li>
+            <li><a class = "clickableText" href="references.html">References</a></li>
+        </ul>
+
+
+
+
+
+
     </nav>
 
 </header>

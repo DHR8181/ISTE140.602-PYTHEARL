@@ -22,20 +22,28 @@
             <h5>Pyth<span>earl</span></h5>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-
-            <a href="about.html">About</a>
-            <span class="dropdown">
-                <span>Lessons ▼</span>
+            <ul>
+                <li><a class = "clickableText" href="index.html">Home</a></li>
+                <li> <a  class = "clickableText" href="about.html">About</a></li>
+                <li ><span class="dropdown">
+                <span class = "clickableText">Lessons ▼</span>
 
                 <span class="dropdown-content">
-                    <div><a href="lesson_dhruv.html">Lesson 1</a></div>
-                    <div><a href="lesson_mohamed.html">Lesson 2</a></div>
-                    <div><a href="lesson_sarvagnya.html">Lesson 3</a></div>
+                    <a class = "clickableText" href="lesson_dhruv.html">Lesson 1</a>
+                    <a class = "clickableText" href="lesson_mohamed.html">Lesson 2</a>
+                    <a class = "clickableText" href="lesson_sarvagnya.html">Lesson 3</a>
                 </span>
             </span>
-            <a href="quiz.html">Quiz</a>
-            <a href="references.html">References</a>
+                </li>
+                <li><a href="quiz.html"><span class = "clickableText">Quiz</span></a></li>
+                <li><a class = "clickableText" href="references.html">References</a></li>
+            </ul>
+
+
+
+
+
+
         </nav>
 
     </header>
@@ -43,24 +51,42 @@
 
     <main>
         <aside>
-            <div>
+            <div id="contentInAside">
+            <div id="lessonsContent">
+                <div id ="asideTitleAndLogo">
+                <img src="assets/media/BookIcon.svg" alt = "Book icon" >
             <h2>Lessons</h2>
-            <ol>
-                <li><a href="lesson_Dhruv.html">Dhruv Lesson</a></li>
-                <li><a href="lesson_sarvagnya.html">Sarvagnya Lesson</a></li>
-                <li><a href="lesson_mohamed.html">Mohamed Lesson</a></li>
+                </div>
+            <ol class = "circled-list">
+                <li><a class = "clickableText" href="lesson_Dhruv.html">Dhruv Lesson</a></li>
+                <li><a class = "clickableText" href="lesson_sarvagnya.html">Sarvagnya Lesson</a></li>
+                <li><a class = "clickableText" href="lesson_mohamed.html">Mohamed Lesson</a></li>
             </ol>
             </div>
             <br>
-           <div id = "about">
-               <a href="about.html">About The Team</a>
+                <div>
+           <div class = "card">
+               <span href="about.html">About The Team</span>
             <br>
-            <label>We are the team behind the development of this website, <a href="about.html">click here</a> to know more about us</label>
+
+            <label>We are the team behind the development of this website, click the button below to know more about us</label>
+            </div>
+                    <a href="about.html">
+                <button type="button" class = "primaryBtn">Learn more</button>
+                    </a>
+                </div>
             </div>
         </aside>
 
         <section>
+            <div>
+            <div>
             <h1><span>Python Introduction</span></h1>
+
+                <div id = "motivation">
+                    <img src="assets/media/PythonImage.jpg">
+
+                </div>
             <p>Python is a high-level interpreted programming language with many applications, such as machine learning,
                 web development, software development and mathematics. This tutorial is tailored for beginners who want
                 to understand the basics of python by giving them basic commands, starting off with learning the python
@@ -70,6 +96,16 @@
                 such as the for and the while loops, and so on. By the end of this tutorial, beginners should be capable
                 of creating code in python, be comfortable analyzing their own and others' code, and act as a solid
                 foundation for further learning.</p>
+
+                <a href="lesson_Dhruv.html">
+                <button type = "button"  class = "primaryBtn">Continue to the first lesson</button>
+                </a>
+            </div>
+
+
+
+            </div>
+
         </section>
     </main>
 
